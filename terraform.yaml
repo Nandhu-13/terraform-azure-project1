@@ -30,8 +30,14 @@ jobs:
       - name: Terraform Init
         run: terraform init
 
+      
       - name: Terraform Plan
         run: terraform plan
+        env:
+          TF_VAR_client_secret: ${{ secrets.CLIENT_SECRET }}
 
       - name: Terraform Apply
         run: terraform apply -auto-approve
+        env:
+          TF_VAR_client_secret: ${{ secrets.CLIENT_SECRET }}
+      
