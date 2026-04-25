@@ -3,7 +3,7 @@ variable "location" {
 }
 
 variable "resource_group_name" {
-  default = "nanda_rg"
+  default = "nanda_rg1"
 }
 
 variable "admin_username" {
