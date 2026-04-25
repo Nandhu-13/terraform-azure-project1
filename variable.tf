@@ -21,8 +21,3 @@ variable "mysql_admin" {
 variable "mysql_password" {
   default = "password#123"
 }
-
-
-variable "client_secret" {
-  
-}
